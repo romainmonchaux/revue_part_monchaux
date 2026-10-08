@@ -1,0 +1,284 @@
+%
+%%%%%%%%%%%%%%%% General document %%%%%%%%%%%%%%%%
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[latin1]{inputenc}
+\usepackage{color}
+\usepackage[french]{babel}
+\usepackage{amsmath, amsfonts}
+\usepackage{textgreek}
+%\usepackage{siunitx}
+\usepackage{rotating}
+\usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+%\usepackage{natbib}
+%\usepackage{latexsym}
+%\usepackage{amssymb}
+%
+\usepackage{bm}  % bold math
+\usepackage{booktabs}  % better tables
+\usepackage{multirow}  % combine table rows
+\usepackage{makecell}  % arrange content in table cells incl. linebreaks
+\usepackage{csquotes}  % quotation/citation commands
+
+%%%%%%%%%%%%%%%% FIGURES %%%%%%%%%%%%%%%%
+\usepackage{subfigure}
+\usepackage{epsfig} 
+\usepackage{epstopdf}
+%\usepackage{movie15}
+%\usepackage{eurosym}
+%\usepackage{gensymb}
+%\usepackage{lmodern}
+%\usepackage{tabularx}
+%\usepackage{float}
+%
+%%%%%%%%%%%%%%% TIKZ %%%%%%%%%%%%%%%%%%%%
+\usepackage{smartdiagram}
+\usepackage{metalogo}
+%\usepackage{dtklogos}
+%
+%%%%%%%%%%%%%%%% COLORS %%%%%%%%%%%%%%%%
+\definecolor{violet}{rgb}{0.3,0.2,0.6}
+\definecolor{violetpale}{rgb}{0.7,0.7,0.8}
+\definecolor{marine}{RGB}{25,25,112}
+\definecolor{marinepale}{rgb}{0.4,0.4,0.5}
+\definecolor{myblue}{rgb}{0.2,0.2,0.7}
+\definecolor{mycream}{rgb}{0.9712 0.940 0.807}
+%
+%
+%%%%%%%%%%%%%%%% TEXT BOXES %%%%%%%%%%%%%%%%
+\usepackage[absolute,showboxes,overlay]{textpos}
+%\TPshowboxestrue % commenter une fois fini
+\TPshowboxesfalse % décommenter pour faire disparaitre les boites
+\textblockorigin{10mm}{10mm} % origine des positions
+%
+%
+%%%%%%%%%%%%%%%% BEAMER PACKAGE AND OPTIONS %%%%%%%%%%%%%%%%
+%%% Beamer Layout %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\usetheme{Madrid}
+%%\usetheme{Warsaw}
+\usetheme{Frankfurt}
+%%\usetheme{Amsterdam}
+\setbeamerfont{caption}{size=\scriptsize}
+\setbeamertemplate{caption}[numbered]
+%%\useoutertheme[subsection=false,shadow]{miniframes}
+%%\setbeamertemplate{mini frames}{}
+\useinnertheme{default}
+\usefonttheme{serif}
+\usepackage{palatino}
+%%\setbeamertemplate{navigation symbols}{}
+\setbeamerfont{frametitle}{size=\small}
+\setbeamertemplate{footline}[page number]
+\setbeamercolor*{normal text}{fg=marine,bg=mycream} 
+\setbeamercolor*{alerted text}{fg=red} 
+\setbeamercolor*{example text}{fg=black} 
+\setbeamercolor*{structure}{fg=marine}  
+\setbeamercolor*{palette tertiary}{fg=black,bg=black!10} 
+\setbeamercolor*{palette quaternary}{fg=black,bg=black!10} 
+\setbeamertemplate{caption}{\raggedright\insertcaption\par}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makeatletter
+    \newenvironment{withoutheadline}{
+        \setbeamertemplate{headline}[default]
+        \def\beamer@entrycode{\vspace*{-\headheight}}
+    }{}
+\setbeamertemplate{mini frames}{}
+\setbeamertemplate{headline}{}
+\setbeamertemplate{navigation symbols}{}
+\definecolor{myred}{rgb}{0.51,0.0,0.0} 
+\setbeamercolor{frametitle}{fg=white, bg=myred}
+\setbeamercolor{title}{fg=white, bg=myred}
+%
+%\newlength\leftsidebar
+%\newlength\rightsidebar
+%\makeatletter
+%\setlength\leftsidebar{\beamer@leftsidebar}
+%\setlength\rightsidebar{\beamer@rightsidebar}
+%%\setbeamercovered{transparent}
+%\def\beamertemplatetransparentcoveredmedium{\setbeamercovered{transparent=0.9}}
+%\beamertemplatetransparentcoveredmedium
+%%
+%%\setbeamertemplate{headline}{%
+%%\leavevmode%
+%%  \hbox{%
+%%    \begin{beamercolorbox}[wd=\paperwidth,ht=2.5ex,dp=1.125ex]{palette quaternary}%
+%%    \insertsectionnavigationhorizontal{\paperwidth}{}{\hskip0pt plus1filll}
+%%    \end{beamercolorbox}%
+%%  }
+%%}
+%%\setbeamertemplate{headline}
+%%{%
+%%  \leavevmode%
+%%  \begin{beamercolorbox}[wd=.3\paperwidth,ht=2.5ex,dp=1.125ex]{section in head/foot}%
+%%    \hbox to .3\paperwidth{\hfil\insertsectionhead\hfil}
+%%  \end{beamercolorbox}%
+%%  \begin{beamercolorbox}[wd=.3\paperwidth,ht=2.5ex,dp=1.125ex]{subsection in head/foot}%
+%%    \hbox to .3\paperwidth{\hfil\insertsubsectionhead\hfil}
+%%  \end{beamercolorbox}%
+%%}
+%%\setbeamertemplate{navigation symbols}{} 
+%%
+%%\setbeamercolor*{lower separation line head}{bg=DeepSkyBlue4} 
+%
+%
+%
+%%%%%%%%%%%%%%%% TIKZ %%%%%%%%%%%%%%%%
+\usepackage{tikz}
+\usetikzlibrary{tikzmark}
+\usetikzlibrary{decorations.pathreplacing,calc}
+\usetikzlibrary{decorations.fractals}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+%
+%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%
+%
+%\newcommand\MyText[4][0pt]{%
+%\begin{tikzpicture}[overlay, remember picture]
+%\draw [decoration={brace},decorate,thick]
+%   ( $ ({pic cs:#3}|-{pic cs:#2}) + (#1,1.3ex) $ ) --  
+%    node[anchor=west,xshift=5pt,text width=5cm] {#4} 
+%  ( $ (pic cs:#3) + (#1,0) $ );
+%\end{tikzpicture}%
+%}
+
+%
+%\makeatother
+%
+%% See if the author has AMS Euler fonts installed: If they have, attempt
+%% to use the 'upmath' package to provide upright math.
+%%%\usepackage{lipsum}
+%%\usepackage{subfigure}
+%%\linespread{1.6}
+%%\textwidth 14.7 true cm
+%%\textheight 21.6 true cm
+%
+%%\ifCUPmtlplainloaded \else
+%%  \checkfont{eurm10}
+%%  \iffontfound
+%%    \IfFileExists{upmath.sty}
+%%      {\typeout{^^JFound AMS Euler Roman fonts on the system,
+%%                   using the 'upmath' package.^^J}%
+%%       \usepackage{upmath}}
+%%      {\typeout{^^JFound AMS Euler Roman fonts on the system, but you
+%%                   dont seem to have the}%
+%%       \typeout{'upmath' package installed. JFM.cls can take advantage
+%%                 of these fonts,^^Jif you use 'upmath' package.^^J}%
+%%       \providecommand\upi{\pi}%
+%%      }
+%%  \else
+%%    \providecommand\upi{\pi}%
+%%  \fi
+%%\fi 
+%
+%%% See if the author has AMS symbol fonts installed: If they have, attempt
+%%% to use the 'amssymb' package to provide the AMS symbol characters.
+%
+%%\ifCUPmtlplainloaded \else
+%%  \checkfont{msam10}
+%%  \iffontfound
+%%    \IfFileExists{amssymb.sty}
+%%      {\typeout{^^JFound AMS Symbol fonts on the system, using the
+%%                'amssymb' package.^^J}%
+%%       \usepackage{amssymb}%
+%%       \let\le=\leqslant  \let\leq=\leqslant
+%%       \let\ge=\geqslant  \let\geq=\geqslant
+%%      }{}
+%%  \fi
+%%\fi
+%
+%%% See if the author has the AMS 'amsbsy' package installed: If they have,
+%%% use it to provide better bold math support (with \boldsymbol).
+%
+%%\ifCUPmtlplainloaded \else
+%%  \IfFileExists{amsbsy.sty}
+%%    {\typeout{^^JFound the 'amsbsy' package on the system, using it.^^J}%
+%%     \usepackage{amsbsy}}
+%%    {\providecommand\boldsymbol[1]{\mbox{\boldmath $##1$}}}
+%%\fi
+%
+%
+%%%% Example macros (some are not used in this sample file) %%%
+%
+%%Comments
+%\def\NOTE#1{{\textcolor{red}{\bf [#1]}}}  % note
+%\def\ADD#1{{\textcolor{blue}{\bf #1}}}    % question
+%
+%% For units of measure
+%\newcommand\dynpercm{\nobreak\mbox{$\;$dyn\,cm$^{-1}$}}
+%\newcommand\cmpermin{\nobreak\mbox{$\;$cm\,min$^{-1}$}}
+%
+%% Various bold symbols
+%\providecommand\bnabla{\boldsymbol{\nabla}}
+%\providecommand\bcdot{\boldsymbol{\cdot}}
+%\newcommand\biS{\boldsymbol{S}}
+%\newcommand\etb{\boldsymbol{\eta}}
+%
+%% For multiletter symbols
+%\newcommand\Real{\mbox{Re}} % cf plain TeX's \Re and Reynolds number
+%\newcommand\Imag{\mbox{Im}} % cf plain TeX's \Im
+%\newcommand\Rey{\mbox{\textit{Re}}}  % Reynolds number
+%\newcommand\Pran{\mbox{\textit{Pr}}} % Prandtl number, cf TeX's \Pr product
+%\newcommand\Pen{\mbox{\textit{Pe}}}  % Peclet number
+%\newcommand\Ai{\mbox{Ai}}            % Airy function
+%\newcommand\Bi{\mbox{Bi}}            % Airy function
+%
+%% For sans serif characters:
+%% The following macros are setup in JFM.cls for sans-serif fonts in text
+%% and math.  If you use these macros in your article, the required fonts
+%% will be substitued when you article is typeset by the typesetter.
+%%
+%% \textsfi, \mathsfi   : sans-serif slanted
+%% \textsfb, \mathsfb   : sans-serif bold
+%% \textsfbi, \mathsfbi : sans-serif bold slanted (doesnt exist in CM fonts)
+%%
+%% For san-serif roman use \textsf and \mathsf as normal.
+%%
+%\newcommand\ssC{\mathsf{C}}    % for sans serif C
+%\newcommand\sfsP{\mathsfi{P}}  % for sans serif sloping P
+%\newcommand\slsQ{\mathsfbi{Q}} % for sans serif bold-sloping Q
+%
+%% Hat position
+%\newcommand\hatp{\skew3\hat{p}}      % p with hat
+%\newcommand\hatR{\skew3\hat{R}}      % R with hat
+%\newcommand\hatRR{\skew3\hat{\hatR}} % R with 2 hats
+%\newcommand\doubletildesigma{\skew2\tilde{\skew2\tilde{\Sigma}}}
+%%       italic Sigma with double tilde
+%
+%% array strut to make delimiters come out right size both ends
+%\newsavebox{\astrutbox}
+%\sbox{\astrutbox}{\rule[-5pt]{0pt}{20pt}}
+%\newcommand{\astrut}{\usebox{\astrutbox}}
+%
+%\newcommand\GaPQ{\ensuremath{G_a(P,Q)}}
+%\newcommand\GsPQ{\ensuremath{G_s(P,Q)}}
+%\newcommand\p{\ensuremath{\partial}}
+%\newcommand\tti{\ensuremath{\rightarrow\infty}}
+%\newcommand\kgd{\ensuremath{k\gamma d}}
+%\newcommand\shalf{\ensuremath{{\scriptstyle\frac{1}{2}}}}
+%\newcommand\sh{\ensuremath{^{\shalf}}}
+%\newcommand\smh{\ensuremath{^{-\shalf}}}
+%\newcommand\squart{\ensuremath{{\textstyle\frac{1}{4}}}}
+%\newcommand\thalf{\ensuremath{{\textstyle\frac{1}{2}}}}
+%\newcommand\Gat{\ensuremath{\widetilde{G_a}}}
+%\newcommand\ttz{\ensuremath{\rightarrow 0}}
+%\newcommand\ndq{\ensuremath{\frac{\mbox{$\partial$}}{\mbox{$\partial$} n_q}}}
+%\newcommand\sumjm{\ensuremath{\sum_{j=1}^{M}}}
+%\newcommand\pvi{\ensuremath{\int_0^{\infty}%
+%  \mskip \ifCUPmtlplainloaded -30mu\else -33mu\fi -\quad}}
+%
+%\newcommand\etal{\mbox{\textit{et al.}}}
+%\newcommand\etc{etc.\ }
+%\newcommand\eg{e.g.\ }
+%
+%\newcommand\VA{\ensuremath{{\cal{V}}}}
+%\newcommand\AV{\ensuremath{{\cal{A}}}}
+%
+%
+%
+%% Figures..
+%\pgfplotsset{filter discard warning=false} % Emp?che l'affichage des warning lorsqu'un NaN est pr?sent dans le csv
+\usepackage{textcomp}

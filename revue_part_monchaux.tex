@@ -1,0 +1,108 @@
+\documentclass[xcolor=x11names,compress,french]{beamer}
+%
+\input{header_beamer_tikz}
+\usepackage[thicklines]{cancel}
+\newcommand\Ccancel[2][black]{\renewcommand\CancelColor{\color{#1}}\xcancel{#2}}
+%
+\definecolor{myblue}{rgb}{0.0, 0.0, 0.86}
+\definecolor{myBlue}{rgb}{0.0, 0.0, 0.86}
+\definecolor{mygreen}{rgb}{0, 0.5, 0}
+\definecolor{myred}{rgb}{0.41, 0, 0}
+\definecolor{airforceblue}{rgb}{0.36, 0.54, 0.66}
+
+%% \definecolor{myred}{RGB}{105,0,0} 
+%\setbeamercolor{block title}{bg=myred,fg=white}
+%
+\graphicspath{{./images/}{figures/},{./01_IP_intro/},{./02_IP_results/},{./03_Tigrou/}}
+%
+%
+\newcommand{\dless}{\mathrm}  % style of dimensionless numbers
+\renewcommand{\Re}{\dless{Re}}  % Reynolds number
+\newcommand{\Ar}{\dless{Ar}}  % Archimedes number
+\newcommand{\Ga}{\dless{Ga}}  % Galileo number
+%
+%
+\usepackage[per-mode=symbol-or-fraction, separate-uncertainty]
+{siunitx}  % typeset numbers & units
+\DeclareSIUnit{\pixel}{px}  % custom pixel unit
+%
+%
+\begin{document}
+%\addtocounter{framenumber}{-6}
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PAGE DE TITRE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\begin{withoutheadline}
+\begin{frame}
+%\titlegraphic{\includegraphics[width=0.8\textwidth]{SpotHDR.eps}}
+
+\title{Inertial Particles and Turbulence}
+%
+\author{Romain Monchaux\\[6pt]}
+%
+\institute{Unité de Mécanique\\
+ENSTA - Institut Polytechnique de Paris, Palaiseau, France}
+\date{}
+\titlepage
+\vspace{-27pt}
+\begin{center}
+\includegraphics[width=.32\textwidth]{tracer.png}\\[10pt]
+\footnotesize{25 novezmbre 2026 - Chatou}
+\end{center}
+\end{frame}
+\end{withoutheadline}
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% INTRO 
+\section{Introduction}
+
+
+%\input{./01_IP_intro/inert_part_intro_00_exemple_01}
+%\input{./01_IP_intro/inert_part_intro_00_exemple_02}
+%\input{./01_IP_intro/inert_part_intro_00_exemple_03}
+%\input{./01_IP_intro/inert_part_intro_00_exemple_04}
+%%
+%\input{./01_IP_intro/inert_part_intro_01_equationMRG_01}
+%\input{./01_IP_intro/inert_part_intro_02_param}
+%\input{./01_IP_intro/inert_part_intro_03_tools_01}
+%\input{./01_IP_intro/inert_part_intro_03_tools_02}
+%%
+%\input{./01_IP_intro/inert_part_intro_06_PC_01}
+%\input{./01_IP_intro/inert_part_intro_06_PC_02}
+%\input{./01_IP_intro/inert_part_intro_06_Sett_01}
+%%\input{./01_IP_intro/inert_part_intro_06_Sett_02}
+%
+%
+%\section{Results - Preferential concentration}
+%\input{./02_IP_results/inert_part_results_setups_01}
+%\input{./02_IP_results/inert_part_results_setups_02}
+%%%
+%\input{./02_IP_results/inert_part_results_PC_voro_01}
+%\input{./02_IP_results/inert_part_results_PC_voro_02}
+%\input{./02_IP_results/inert_part_results_PC_voro_03}
+%%\input{./02_IP_results/inert_part_results_PC_voro_04}
+%%\input{./02_IP_results/inert_part_results_PC_voro_05}
+%%
+%\input{./02_IP_results/inert_part_results_PC_cluster_01}
+%\input{./02_IP_results/inert_part_results_PC_cluster_02}
+%\input{./02_IP_results/inert_part_results_PC_cluster_03}
+%\input{./02_IP_results/inert_part_results_PC_cluster_04}
+%
+%\section{Results - Settling alteration}
+%\input{./02_IP_results/inert_part_results_Sett_01}
+%\input{./02_IP_results/inert_part_results_Sett_02}
+%\input{./02_IP_results/inert_part_results_Sett_03}
+%%%
+%\section{Results - Tigrou}
+%\input{./03_Tigrou/tigrou_param_02}
+%\input{./03_Tigrou/tigrou_results_Vset_01}
+%\input{./03_Tigrou/tigrou_results_Voro_01}
+%\input{./03_Tigrou/double_mes_01}
+
+%\addtocounter{framenumber}{-3}%
+%
+\end{document}
