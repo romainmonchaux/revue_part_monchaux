@@ -1,0 +1,4 @@
+Experiments: 
+- lister les groupes sous les types de manip plutôt que mettre une ref
+- faire le spectre turbulent propre
+- 
