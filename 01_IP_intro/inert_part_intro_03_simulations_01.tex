@@ -17,16 +17,6 @@
 %		\label{navier-stokes}
 %	\end{eqnarray*}
 %}
-{\small
-\begin{itemize}
-	\item Central assumption:\textbf{\textit{ undisturbed flow velocity}}
-	\item Quasi-steady forces: drag (Stokes / nonlinear), lift
-	\item Unsteady forces: added mass, pressure gradient, Basset
-	\item Finite-size correction: Fax\'en: $\mathbf{u}_{eff} = \mathbf{u}(\mathbf{x}_p) + \frac{d_p^2}{24}\nabla^2\mathbf{u}(\mathbf{x}_p)$
-	\item Validity: $d_p \ll \eta$, $Re_p \ll 1$	
-\end{itemize}
-}
-\vspace{8pt}
 \only<1>
 {\small{\textbf{Particle equation (Maxey-Riley-Gattignol):}}
 \scriptsize{
@@ -113,6 +103,17 @@
 			^{\mathrm{Basset\ history\ term}}
 		\end{eqnarray*}
 }}
+\only<1-2>{
+{\small
+	\begin{itemize}
+		\item Central assumption:\textbf{\textit{ undisturbed flow velocity}}
+		\item Quasi-steady forces: drag (Stokes / nonlinear), lift
+		\item Unsteady forces: added mass, pressure gradient, Basset
+		\item Finite-size correction: Fax\'en: $\mathbf{u}_{eff} = \mathbf{u}(\mathbf{x}_p) + \frac{d_p^2}{24}\nabla^2\mathbf{u}(\mathbf{x}_p)$
+		\item Validity: $d_p \ll \eta$, $Re_p \ll 1$	
+	\end{itemize}
+}}
+
 \only<3>{
 \small{\textbf{Coupling:}}
 \begin{itemize}
